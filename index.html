@@ -1,0 +1,122 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <title>TOOLGOOL — MooMoo.io Stats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <canvas id="particles"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-mark">T</span>
+      <span>TL<span class="muted"> / PLAYER PROFILE</span></span>
+    </a>
+    <span class="live"><i></i> PLAYER RECORD</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span class="eyebrow-line"></span>
+          MOOMOO.IO · PERSONAL RECORD
+        </div>
+        <h1 id="playerName">TOOLGOOL</h1>
+        <p class="hero-sub">НЕ ПРОСТО ИГРА. <b>ТВОЯ ИСТОРИЯ.</b></p>
+        <div class="hero-meta">
+          <span class="meta-dot"></span>
+          Данные обновлены: <span id="updated"></span>
+        </div>
+      </div>
+
+      <div class="hero-emblem reveal">
+        <div class="emblem-ring ring-one"></div>
+        <div class="emblem-ring ring-two"></div>
+        <div class="emblem-core">
+          <span>TL</span>
+          <small>PLAYER</small>
+        </div>
+        <div class="emblem-cross">✦</div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 / COMBAT RECORD</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">01</span>
+          <h2>БОЕВАЯ СТАТИСТИКА</h2>
+        </div>
+        <p>Каждый бой оставляет след</p>
+      </div>
+      <div class="combat-grid" id="combatGrid"></div>
+      <div class="kd-panel">
+        <div>
+          <span class="tiny-label">KILL / DEATH RATIO</span>
+          <strong id="kdValue">1.05</strong>
+          <span class="kd-caption">соотношение убийств и смертей</span>
+        </div>
+        <div class="kd-track"><div id="kdFill"></div></div>
+        <span class="kd-status" id="kdStatus">POSITIVE RATIO</span>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">02</span>
+          <h2>СОБРАННЫЕ РЕСУРСЫ</h2>
+        </div>
+        <p>Результат долгой игры</p>
+      </div>
+      <div class="resource-grid" id="resourceGrid"></div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">03</span>
+          <h2>ДОСТИЖЕНИЯ</h2>
+        </div>
+        <p>Цифры, которые говорят сами</p>
+      </div>
+      <div class="achievement-grid" id="achievementGrid"></div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">04</span>
+          <h2>АКТИВНОСТЬ</h2>
+        </div>
+        <p>Убийства и лучшие результаты</p>
+      </div>
+      <div class="activity-list" id="activityList"></div>
+    </section>
+
+    <footer>
+      <div class="footer-mark">TOOLGOOL<span> / TL</span></div>
+      <p>MooMoo.io · Player Statistics</p>
+      <span class="footer-line"></span>
+      <small>PERSONAL RECORD — <span id="footerDate"></span></small>
+    </footer>
+  </main>
+
+  <script src="Data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+```
